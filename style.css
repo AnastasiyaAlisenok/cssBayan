@@ -1,14 +1,82 @@
 body {
     margin: 0 auto;
-    background-color:cornsilk;
+    background-color: rgb(220, 215, 215);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 22px;
+    width: 600px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 0;
 }
 .bayan {
-    padding: 0 300px;
+    width: 100%;
+    padding-top: 60px;
+    margin: 0 70%;
+    position: relative;
+    background-color:rgb(220, 215, 215);
+    z-index: 5;
 }
+
 h1 {
     color: coral;
     font-size: 40px;
     text-align: center;
+    margin-top: 0;
+}
+.accordion  {
+    position: relative;
+    width: 100%;
+    color: coral;
+    font-weight: 700;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: padding 0.5s;
+}
+.accordion label {
+    cursor: pointer;
+    background-color: rgb(220, 215, 215);
+    padding: 15px 30px 15px 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    border-bottom: 3px solid coral;
+    z-index: 10;
+}
+.meme {
+    height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.bayan:hover .accordion label {
+    color:  rgb(97, 97, 235);
+}
+.accordion input {
+    display: none;
+}
+.bayan:hover .accordion label::before {
+    content: '\271a';
+    float: right;
+}
+.accordion input:checked + label {
+    color: rgb(97, 97, 235);
+    border-bottom: 3px solid #6161eb;
+}
+.accordion input:checked + label::before {
+    color: #6161eb;
+    content: '\2716';
+    float: right;
+}
+.accordion input:checked + label + .meme {
+    height: auto;
+    position: relative;
+    margin-left: 18%;
+    padding: 10px 0;
+    transition: padding 0.5s;
+    z-index: -10;
+}
+.bayan:hover .accordion input:checked + label::before {
+    color: #6161eb;
+    content: '\2716';
+    float: right;
 }
