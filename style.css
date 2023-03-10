@@ -1,82 +1,112 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0 auto;
     background-color: rgb(220, 215, 215);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 22px;
+    font-size: 20px;
     width: 600px;
+    height: 800px;
     padding: 0;
     margin: 0;
-    position: relative;
-    z-index: 0;
 }
 .bayan {
     width: 100%;
-    padding-top: 60px;
+    padding-top: 40px;
     margin: 0 70%;
     position: relative;
     background-color:rgb(220, 215, 215);
-    z-index: 5;
 }
 
 h1 {
     color: coral;
-    font-size: 40px;
+    font-size: 34px;
     text-align: center;
     margin-top: 0;
 }
 .accordion  {
-    position: relative;
     width: 100%;
     color: coral;
     font-weight: 700;
     box-sizing: border-box;
     overflow: hidden;
-    transition: padding 0.5s;
+}
+.accordion div {
+    position: static;
 }
 .accordion label {
+    position: static;
     cursor: pointer;
     background-color: rgb(220, 215, 215);
-    padding: 15px 30px 15px 0;
-    display: block;
-    width: 100%;
-    margin-bottom: 15px;
+    padding: 10px 0 10px 0;
+    display: inline-block;
+    width: 90%;
     border-bottom: 3px solid coral;
-    z-index: 10;
+    margin-left: 0;
 }
 .meme {
+    position: static;
     height: 0;
+    padding-top: 15px;
     overflow: hidden;
     box-sizing: border-box;
 }
 .bayan:hover .accordion label {
     color:  rgb(97, 97, 235);
+    border-bottom: 3px solid #6161eb;
+    padding: 10px 0 10px 0;
+    margin-top: 0;
+    position: static;
+    cursor: pointer;
+    background-color: rgb(220, 215, 215);
+    display: inline-block;
+    width: 90%;
 }
 .accordion input {
     display: none;
 }
-.bayan:hover .accordion label::before {
-    content: '\271a';
-    float: right;
+.bayan:hover .icon1 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("img/plus.png");
+    margin-right: 0;
+    transition: 0s;
 }
 .accordion input:checked + label {
     color: rgb(97, 97, 235);
     border-bottom: 3px solid #6161eb;
 }
-.accordion input:checked + label::before {
-    color: #6161eb;
-    content: '\2716';
-    float: right;
+
+.accordion input:checked + label + .icon1 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("img/free-icon-font-cross.png");
+    margin-right: 0;
+    margin-top: 5%;
+    transition: 0s;
 }
-.accordion input:checked + label + .meme {
-    height: auto;
-    position: relative;
+.accordion input:checked + label + .icon1 + .meme {
+    height: 100%;
+    position: static;
     margin-left: 18%;
-    padding: 10px 0;
-    transition: padding 0.5s;
-    z-index: -10;
+    transition: height linear 2s;
 }
-.bayan:hover .accordion input:checked + label::before {
-    color: #6161eb;
-    content: '\2716';
-    float: right;
+
+.bayan:hover .accordion input:checked + label + .icon1 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("img/free-icon-font-cross.png");
+    margin-right: auto 0;
+    margin-top: 0;
+    transition: 0s;
+}
+.open-block:hover ~ .meme {
+    height: 100%;
+    position: static;
+    margin-left: 18%;
+    transition: height 2s;
 }
