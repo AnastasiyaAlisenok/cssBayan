@@ -1,0 +1,14 @@
+body {
+    margin: 0 auto;
+    background-color:cornsilk;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.bayan {
+    padding: 0 300px;
+}
+h1 {
+    color: coral;
+    font-size: 40px;
+    text-align: center;
+}
