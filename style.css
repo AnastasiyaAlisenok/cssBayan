@@ -4,7 +4,7 @@ html {
 body {
     background-color: rgb(220, 215, 215);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     width: 90vh;
     height: 120vh;
     padding: 0;
@@ -91,7 +91,7 @@ h1 {
 .meme:active img {
     opacity: 0.4;
 }
-.meme:active label {
+.meme:active ~ .accordeon label {
     opacity: 0.4;
 }
 
@@ -137,8 +137,12 @@ h1 {
 }
 @media all and (max-width: 1000px) and (min-width: 760px)  {
     body {
+        font-size: 1.4rem;
         width: 80vw;
     }
+    h1 {
+        font-size: 2rem;
+     }
     .meme {
         padding-left: 30%;
     }
