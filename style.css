@@ -4,7 +4,7 @@ html {
 body {
     background-color: rgb(220, 215, 215);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     width: 90vh;
     height: 120vh;
     padding: 0;
@@ -15,11 +15,12 @@ body {
     padding-top: 40px;
     margin: 0 7%;
     background-color:rgb(220, 215, 215);
+    margin-bottom: 10vh;
 }
 
 h1 {
-    color: coral;
-    font-size: 2rem;
+    color: #ff7f50;
+    font-size: 2.2rem;
     text-align: center;
     margin-top: 0;
 }
@@ -36,13 +37,22 @@ h1 {
     background-color: rgb(220, 215, 215);
     padding: 2% 0 2% 0;
     display: inline-block;
-    width: 90%;
+    width: 100%;
     margin-left: 0;
 }
+.title-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    width: 80%;
+}
 .line {
-    width: 70vw;
+    width: 100%;
     height: 0.1vw;
     background-color: coral;
+    margin-top: 10px;
 }
 .meme {
     position: static;
@@ -50,6 +60,7 @@ h1 {
     padding-top: 2%;
     overflow: hidden;
     box-sizing: border-box;
+    margin-left: 25%;
 }
 .bayan:hover .accordion label {
     color:  rgb(97, 97, 235);
@@ -59,8 +70,7 @@ h1 {
     cursor: pointer;
     background-color: rgb(220, 215, 215);
     display: inline-block;
-    width: 90%;
-    transition: .7s;
+    width: 100%;
 }
 .accordion input {
     display: none;
@@ -70,51 +80,48 @@ h1 {
     width: 1vw;
     height: 1vw;
     background-image: url("img/plus.png");
-    margin-left: 4%;
+    margin-right: 1%;
 }
 .accordion input:checked + label {
     color: rgb(97, 97, 235);
 }
 
-.accordion input:checked + label + .icon1 {
+.accordion input:checked + label > .title-container > .icon1 {
     display: inline-block;
     width: 1vw;
     height: 1vw;
     background-image: url("img/free-icon-font-cross.png");
-    margin-left: 4%;
+    margin-right: 1%;
 }
-.accordion input:checked + label + .icon1 + .line {
+.accordion input:checked + label > .line {
     background-color: rgb(97, 97, 235);
 }
-.accordion input:checked + label + .icon1 + .line + .meme {
+.accordion input:checked + label > .meme {
     height: 100%;
     position: static;
-    margin-left: 18%;
+    margin-left: 25%;
 }
 
-.bayan:hover .accordion input:checked + label + .icon1 {
+.bayan:hover .accordion input:checked + label > .title-container > .icon1 {
     display: inline-block;
     width: 1vw;
     height: 1vw;
     background-image: url("img/free-icon-font-cross.png");
-    margin-right: auto 0;
+    margin-right: 1%;
     margin-top: 0;
 }
-.bayan:hover .accordion input + label + .icon1 +.line {
+.bayan:hover .accordion input + label > .line {
     background-color: rgb(97, 97, 235);
 }
-.open-block:hover ~ .meme {
+.open-block:hover > .meme {
     height: 100%;
     position: static;
-    margin-left: 18%;
+    margin-left: 25%;
     animation: show 2s;
     padding-top: 2%;
 }
-.meme img:hover {
-    opacity: 0.7;
-    transition: 1s;
-}
-.open-block:hover {
+
+.title-container:hover {
     opacity: 0.5;
     transition: 0.5s;
 }
@@ -122,3 +129,259 @@ h1 {
     from {opacity: 0;} to {opacity: 1;}
 }
 
+@media all and (max-width: 1490px) and (min-width: 1100px) {
+    body {
+        font-size: 1.8rem;
+        width: 80vw;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    .meme {
+        margin-left: 30%;
+    }
+    .accordion input:checked + label > .meme {
+        margin-left: 30%;
+    }
+    .accordion input:checked + label > .title-container > .icon1 {
+        width: 1.2vw;
+        height: 1.2vw;
+    }
+    .bayan:hover .icon1 {
+        width: 1.2vw;
+        height: 1.2vw;
+    }
+    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
+        width: 1.2vw;
+        height: 1.2vw;
+}
+.open-block:hover > .meme {
+    margin-left: 30%;
+}
+}
+@media all and (max-width: 1200px) and (min-width: 850px) {
+    body {
+        width: 80vw;
+    }
+    .meme {
+        margin-left: 30%;
+    }
+    .accordion input:checked + label > .meme {
+        margin-left: 30%;
+    }
+    .accordion input:checked + label > .title-container > .icon1 {
+        width: 1.6vw;
+        height: 1.6vw;
+        margin-left: 4%;
+    }
+    .bayan:hover .icon1 {
+        width: 1.6vw;
+        height: 1.6vw;
+        margin-left: 4%;
+    }
+    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
+        width: 1.6vw;
+        height: 1.6vw;
+}
+.open-block:hover > .meme {
+    margin-left: 30%;
+}
+}
+@media all and (max-width: 850px) and (min-width: 760px) {
+    body {
+        font-size: 1.6rem;
+        width: 70vw;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .meme {
+        margin-left: 23%;
+    }
+    .accordion input:checked + label > .meme {
+        margin-left: 23%;
+    }
+    .accordion input:checked + label > .title-container > .icon1 {
+        width: 2.1vw;
+        height: 2.1vw;
+    }
+    .bayan:hover .icon1 {
+        width: 2.1vw;
+        height: 2.1vw;
+    }
+    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
+        width: 2.1vw;
+        height: 2.1vw;
+}
+.open-block:hover > .meme {
+    margin-left: 23%;
+}
+}
+@media all and (max-width: 760px) and (min-width: 610px) {
+    body {
+        font-size: 1.6rem;
+        width: 80vw;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .line {
+        width: 80vw;
+    }
+    .meme {
+        margin-left: 18%;
+    }
+    .accordion input:checked + label > .meme {
+        margin-left: 18%;
+    }
+    .accordion input:checked + label > .title-container > .icon1 {
+        width: 2.4vw;
+        height: 2.4vw;
+    }
+    .bayan:hover .icon1 {
+        width: 2.4vw;
+        height: 2.4vw;
+    }
+    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
+        width: 2.4vw;
+        height: 2.4vw;
+}
+.open-block:hover > .meme {
+    margin-left: 18%;
+}
+}
+@media all and (max-width: 610px) and (min-width: 560px) {
+    body {
+        font-size: 1.7rem;
+        width: 80vw;
+    }
+    h1 {
+        font-size: 2.6rem;
+    }
+    .line {
+        width: 80vw;
+    }
+    .meme {
+        margin-left: 14%;
+    }
+    .accordion input:checked + label > .meme {
+        margin-left: 14%;
+    }
+    .accordion input:checked + label > .title-container > .icon1 {
+        width: 2.7vw;
+        height: 2.7vw;
+    }
+    .bayan:hover .icon1 {
+        width: 2.7vw;
+        height: 2.7vw;
+    }
+    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
+        width: 2.7vw;
+        height: 2.7vw;
+}
+.open-block:hover > .meme {
+    margin-left: 14%;
+}
+}
+@media all and (max-width: 560px) and (min-width: 490px) {
+    body {
+        font-size: 1.7rem;
+        width: 85vw;
+    }
+    h1 {
+        font-size: 2.6rem;
+    }
+    .line {
+        width: 85vw;
+    }
+    .meme {
+        margin-left: 14%;
+    }
+    .accordion input:checked + label > .meme {
+        margin-left: 14%;
+    }
+    .accordion input:checked + label > .title-container > .icon1 {
+        width: 3.1vw;
+        height: 3.1vw;
+    }
+    .bayan:hover .icon1 {
+        width: 3.1vw;
+        height: 3.1vw;
+    }
+    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
+        width: 3.1vw;
+        height: 3.1vw;
+}
+.open-block:hover > .meme {
+    margin-left: 14%;
+}
+}
+@media all and (max-width: 490px) and (min-width: 380px) {
+    body {
+        font-size: 1.4rem;
+        width: 85vw;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .line {
+        width: 85vw;
+    }
+    .meme {
+        margin-left: 0;
+    }
+    .accordion input:checked + label > .meme {
+        margin-left: 0;
+    }
+    .accordion input:checked + label > .title-container > .icon1 {
+        width: 3.6vw;
+        height: 3.6vw;
+    }
+    .bayan:hover .icon1 {
+        width: 3.6vw;
+        height: 3.6vw;
+    }
+    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
+        width: 3.6vw;
+        height: 3.6vw;
+}
+.open-block:hover > .meme {
+    margin-left: 0;
+}
+}
+@media all and (max-width: 380px) {
+    body {
+        font-size: 1.2rem;
+        width: 85vw;
+    }
+    .bayan {
+        margin: 0 5%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .line {
+        width: 85vw;
+    }
+    .meme {
+        margin-left: 0;
+    }
+    .accordion input:checked + label > .meme {
+        margin-left: 0;
+    }
+    .accordion input:checked + label > .title-container > .icon1 {
+        width: 4vw;
+        height: 4vw;
+    }
+    .bayan:hover .icon1 {
+        width: 4vw;
+        height: 4vw;
+    }
+    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
+        width: 4vw;
+        height: 4vw;
+}
+.open-block:hover > .meme {
+    margin-left: 0;
+}
+}
