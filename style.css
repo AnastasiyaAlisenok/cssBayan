@@ -70,8 +70,7 @@ h1 {
     width: 1vw;
     height: 1vw;
     background-image: url("img/plus.png");
-    margin-right: 0;
-    transition: 0.5s;
+    margin-left: 4%;
 }
 .accordion input:checked + label {
     color: rgb(97, 97, 235);
@@ -82,8 +81,7 @@ h1 {
     width: 1vw;
     height: 1vw;
     background-image: url("img/free-icon-font-cross.png");
-    margin-right: 0;
-    transition: .5s;
+    margin-left: 4%;
 }
 .accordion input:checked + label + .icon1 + .line {
     background-color: rgb(97, 97, 235);
