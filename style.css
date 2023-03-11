@@ -88,11 +88,13 @@ h1 {
 .meme:active {
     cursor: wait;
 }
-.meme:active img {
+label:active {
     opacity: 0.4;
 }
-.meme:active ~ .accordeon label {
-    opacity: 0.4;
+label:active > .title-container {
+    color: coral;
+    opacity: 1;
+    cursor: wait;
 }
 
 @media (hover:hover) {
