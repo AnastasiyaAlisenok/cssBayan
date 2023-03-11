@@ -30,9 +30,6 @@ h1 {
     box-sizing: border-box;
     overflow: hidden;
 }
-.accordion div {
-    position: static;
-}
 .accordion label {
     position: static;
     cursor: pointer;
@@ -40,8 +37,12 @@ h1 {
     padding: 2% 0 2% 0;
     display: inline-block;
     width: 90%;
-    border-bottom: 3px solid coral;
     margin-left: 0;
+}
+.line {
+    width: 70vw;
+    height: 0.1vw;
+    background-color: coral;
 }
 .meme {
     position: static;
@@ -52,7 +53,6 @@ h1 {
 }
 .bayan:hover .accordion label {
     color:  rgb(97, 97, 235);
-    border-bottom: 3px solid #6161eb;
     padding: 2% 0 2% 0;
     margin-top: 0;
     position: static;
@@ -75,7 +75,6 @@ h1 {
 }
 .accordion input:checked + label {
     color: rgb(97, 97, 235);
-    border-bottom: 3px solid #6161eb;
 }
 
 .accordion input:checked + label + .icon1 {
@@ -86,7 +85,10 @@ h1 {
     margin-right: 0;
     transition: .5s;
 }
-.accordion input:checked + label + .icon1 + .meme {
+.accordion input:checked + label + .icon1 + .line {
+    background-color: rgb(97, 97, 235);
+}
+.accordion input:checked + label + .icon1 + .line + .meme {
     height: 100%;
     position: static;
     margin-left: 18%;
@@ -99,7 +101,9 @@ h1 {
     background-image: url("img/free-icon-font-cross.png");
     margin-right: auto 0;
     margin-top: 0;
-    transition: .5s;
+}
+.bayan:hover .accordion input + label + .icon1 +.line {
+    background-color: rgb(97, 97, 235);
 }
 .open-block:hover ~ .meme {
     height: 100%;
