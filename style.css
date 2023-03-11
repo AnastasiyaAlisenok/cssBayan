@@ -60,7 +60,7 @@ h1 {
     padding-top: 2%;
     overflow: hidden;
     box-sizing: border-box;
-    margin-left: 25%;
+    padding-left: 25%;
 }
 .accordion input {
     display: none;
@@ -81,7 +81,7 @@ h1 {
 .accordion input:checked + label > .meme {
     height: 100%;
     position: static;
-    margin-left: 25%;
+    padding-left: 25%;
 }
 .meme:active {
     cursor: wait;
@@ -114,7 +114,7 @@ h1 {
     .open-block:hover > .meme {
         height: 100%;
         position: static;
-        margin-left: 25%;
+        padding-left: 25%;
         animation: show 2s;
         padding-top: 2%;
     }
@@ -143,10 +143,10 @@ h1 {
         font-size: 2.2rem;
     }
     .meme {
-        margin-left: 30%;
+        padding-left: 30%;
     }
     .accordion input:checked + label > .meme {
-        margin-left: 30%;
+        padding-left: 30%;
     }
     .accordion input:checked + label > .title-container > .icon1 {
         width: 1.2vw;
@@ -158,10 +158,10 @@ h1 {
         width: 80vw;
     }
     .meme {
-        margin-left: 30%;
+        padding-left: 30%;
     }
     .accordion input:checked + label > .meme {
-        margin-left: 30%;
+        padding-left: 30%;
     }
     .accordion input:checked + label > .title-container > .icon1 {
         width: 1.6vw;
@@ -178,10 +178,10 @@ h1 {
         font-size: 2.5rem;
     }
     .meme {
-        margin-left: 23%;
+        padding-left: 23%;
     }
     .accordion input:checked + label > .meme {
-        margin-left: 23%;
+        padding-left: 23%;
     }
     .accordion input:checked + label > .title-container > .icon1 {
         width: 2.1vw;
@@ -200,10 +200,10 @@ h1 {
         width: 80vw;
     }
     .meme {
-        margin-left: 18%;
+        padding-left: 18%;
     }
     .accordion input:checked + label > .meme {
-        margin-left: 18%;
+        padding-left: 18%;
     }
     .accordion input:checked + label > .title-container > .icon1 {
         width: 2.4vw;
@@ -222,10 +222,10 @@ h1 {
         width: 80vw;
     }
     .meme {
-        margin-left: 14%;
+        padding-left: 14%;
     }
     .accordion input:checked + label > .meme {
-        margin-left: 14%;
+        padding-left: 14%;
     }
     .accordion input:checked + label > .title-container > .icon1 {
         width: 2.7vw;
@@ -244,10 +244,10 @@ h1 {
         width: 85vw;
     }
     .meme {
-        margin-left: 14%;
+        padding-left: 14%;
     }
     .accordion input:checked + label > .meme {
-        margin-left: 14%;
+        padding-left: 14%;
     }
     .accordion input:checked + label > .title-container > .icon1 {
         width: 3.1vw;
@@ -266,10 +266,10 @@ h1 {
         width: 85vw;
     }
     .meme {
-        margin-left: 0;
+        padding-left: 0;
     }
     .accordion input:checked + label > .meme {
-        margin-left: 0;
+        padding-left: 0;
     }
     .accordion input:checked + label > .title-container > .icon1 {
         width: 3.6vw;
@@ -291,10 +291,10 @@ h1 {
         width: 85vw;
     }
     .meme {
-        margin-left: 0;
+        padding-left: 0;
     }
     .accordion input:checked + label > .meme {
-        margin-left: 0;
+        padding-left: 0;
     }
     .accordion input:checked + label > .title-container > .icon1 {
         width: 4vw;
