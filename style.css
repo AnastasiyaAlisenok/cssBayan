@@ -70,8 +70,8 @@ h1 {
 }
 .accordion input:checked + label > .title-container > .icon1 {
     display: inline-block;
-    width: 1vw;
-    height: 1vw;
+    width: 1rem;
+    height: 1rem;
     background-image: url("img/free-icon-font-cross.png");
     margin-right: 1%;
 }
@@ -106,8 +106,8 @@ h1 {
     }
     .bayan:hover .icon1 {
         display: inline-block;
-        width: 1vw;
-        height: 1vw;
+        width: 1rem;
+        height: 1rem;
         background-image: url("img/plus.png");
         margin-right: 1%;
     }
@@ -120,8 +120,8 @@ h1 {
     }
     .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
         display: inline-block;
-        width: 1vw;
-        height: 1vw;
+        width: 1rem;
+        height: 1rem;
         background-image: url("img/free-icon-font-cross.png");
         margin-right: 1%;
         margin-top: 0;
@@ -133,27 +133,7 @@ h1 {
 @keyframes show {
     from {opacity: 0;} to {opacity: 1;}
 }
-
-@media all and (max-width: 1490px) and (min-width: 1200px) {
-    body {
-        font-size: 1.8rem;
-        width: 80vw;
-    }
-    h1 {
-        font-size: 2.2rem;
-    }
-    .meme {
-        padding-left: 30%;
-    }
-    .accordion input:checked + label > .meme {
-        padding-left: 30%;
-    }
-    .accordion input:checked + label > .title-container > .icon1 {
-        width: 1.2vw;
-        height: 1.2vw;
-    }
-}
-@media all and (max-width: 1200px) and (min-width: 850px)  {
+@media all and (max-width: 1000px) and (min-width: 760px)  {
     body {
         width: 80vw;
     }
@@ -163,120 +143,8 @@ h1 {
     .accordion input:checked + label > .meme {
         padding-left: 30%;
     }
-    .accordion input:checked + label > .title-container > .icon1 {
-        width: 1.6vw;
-        height: 1.6vw;
-        margin-left: 4%;
-    }
 }
-@media all and (max-width: 850px) and (min-width: 760px) {
-    body {
-        font-size: 1.6rem;
-        width: 70vw;
-    }
-    h1 {
-        font-size: 2.5rem;
-    }
-    .meme {
-        padding-left: 23%;
-    }
-    .accordion input:checked + label > .meme {
-        padding-left: 23%;
-    }
-    .accordion input:checked + label > .title-container > .icon1 {
-        width: 2.1vw;
-        height: 2.1vw;
-    }
-}
-@media all and (max-width: 760px) and (min-width: 610px) {
-    body {
-        font-size: 1.6rem;
-        width: 80vw;
-    }
-    h1 {
-        font-size: 2.5rem;
-    }
-    .line {
-        width: 80vw;
-    }
-    .meme {
-        padding-left: 18%;
-    }
-    .accordion input:checked + label > .meme {
-        padding-left: 18%;
-    }
-    .accordion input:checked + label > .title-container > .icon1 {
-        width: 2.4vw;
-        height: 2.4vw;
-    }
-}
-@media all and (max-width: 610px) and (min-width: 560px) {
-    body {
-        font-size: 1.7rem;
-        width: 80vw;
-    }
-    h1 {
-        font-size: 2.6rem;
-    }
-    .line {
-        width: 80vw;
-    }
-    .meme {
-        padding-left: 14%;
-    }
-    .accordion input:checked + label > .meme {
-        padding-left: 14%;
-    }
-    .accordion input:checked + label > .title-container > .icon1 {
-        width: 2.7vw;
-        height: 2.7vw;
-    }
-}
-@media all and (max-width: 560px) and (min-width: 490px) {
-    body {
-        font-size: 1.7rem;
-        width: 85vw;
-    }
-    h1 {
-        font-size: 2.6rem;
-    }
-    .line {
-        width: 85vw;
-    }
-    .meme {
-        padding-left: 14%;
-    }
-    .accordion input:checked + label > .meme {
-        padding-left: 14%;
-    }
-    .accordion input:checked + label > .title-container > .icon1 {
-        width: 3.1vw;
-        height: 3.1vw;
-    }
-}
-@media all and (max-width: 490px) and (min-width: 380px) {
-    body {
-        font-size: 1.4rem;
-        width: 85vw;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    .line {
-        width: 85vw;
-    }
-    .meme {
-        padding-left: 0;
-    }
-    .accordion input:checked + label > .meme {
-        padding-left: 0;
-    }
-    .accordion input:checked + label > .title-container > .icon1 {
-        width: 3.6vw;
-        height: 3.6vw;
-    }
-}
-@media all and (max-width: 380px) and (min-width: 320px) {
+@media all and (max-width: 760px) and (min-width: 320px) {
     body {
         font-size: 1.2rem;
         width: 85vw;
@@ -296,10 +164,6 @@ h1 {
     .accordion input:checked + label > .meme {
         padding-left: 0;
     }
-    .accordion input:checked + label > .title-container > .icon1 {
-        width: 4vw;
-        height: 4vw;
-    }
     .meme img {
         width: 80vw;
         height: auto;
@@ -307,8 +171,8 @@ h1 {
 }
 @media all and (max-width: 380px) {
     .accordion input:checked + label > .title-container > .icon1 {
-        width: 4.9vw;
-        height: 4.9vw;
+        width: 1rem;
+        height: 1rem;
     } 
     body {
         font-size: 1rem;
