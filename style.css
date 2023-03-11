@@ -4,7 +4,7 @@ html {
 body {
     background-color: rgb(220, 215, 215);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 90vh;
     height: 120vh;
     padding: 0;
@@ -46,7 +46,7 @@ h1 {
     justify-content: space-between;
 }
 .title {
-    width: 80%;
+    width: 90%;
 }
 .line {
     width: 100%;
@@ -83,7 +83,12 @@ h1 {
     position: static;
     margin-left: 25%;
 }
-
+.meme:active {
+    cursor: wait;
+}
+.meme:active img {
+    opacity: 0.4;
+}
 @media (hover:hover) {
     .title-container:hover {
         opacity: 0.5;
