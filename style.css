@@ -53,7 +53,7 @@ h1 {
 .bayan:hover .accordion label {
     color:  rgb(97, 97, 235);
     border-bottom: 3px solid #6161eb;
-    padding: 1% 0 1% 0;
+    padding: 2% 0 2% 0;
     margin-top: 0;
     position: static;
     cursor: pointer;
@@ -106,6 +106,7 @@ h1 {
     position: static;
     margin-left: 18%;
     animation: show 2s;
+    padding-top: 2%;
 }
 .meme img:hover {
     opacity: 0.7;
