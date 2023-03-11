@@ -62,30 +62,12 @@ h1 {
     box-sizing: border-box;
     margin-left: 25%;
 }
-.bayan:hover .accordion label {
-    color:  rgb(97, 97, 235);
-    padding: 2% 0 2% 0;
-    margin-top: 0;
-    position: static;
-    cursor: pointer;
-    background-color: rgb(220, 215, 215);
-    display: inline-block;
-    width: 100%;
-}
 .accordion input {
     display: none;
-}
-.bayan:hover .icon1 {
-    display: inline-block;
-    width: 1vw;
-    height: 1vw;
-    background-image: url("img/plus.png");
-    margin-right: 1%;
 }
 .accordion input:checked + label {
     color: rgb(97, 97, 235);
 }
-
 .accordion input:checked + label > .title-container > .icon1 {
     display: inline-block;
     width: 1vw;
@@ -102,34 +84,52 @@ h1 {
     margin-left: 25%;
 }
 
-.bayan:hover .accordion input:checked + label > .title-container > .icon1 {
-    display: inline-block;
-    width: 1vw;
-    height: 1vw;
-    background-image: url("img/free-icon-font-cross.png");
-    margin-right: 1%;
-    margin-top: 0;
-}
-.bayan:hover .accordion input + label > .line {
-    background-color: rgb(97, 97, 235);
-}
-.open-block:hover > .meme {
-    height: 100%;
-    position: static;
-    margin-left: 25%;
-    animation: show 2s;
-    padding-top: 2%;
-}
-
-.title-container:hover {
-    opacity: 0.5;
-    transition: 0.5s;
+@media (hover:hover) {
+    .title-container:hover {
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+    .bayan:hover .accordion label {
+        color:  rgb(97, 97, 235);
+        padding: 2% 0 2% 0;
+        margin-top: 0;
+        position: static;
+        cursor: pointer;
+        background-color: rgb(220, 215, 215);
+        display: inline-block;
+        width: 100%;
+    }
+    .bayan:hover .icon1 {
+        display: inline-block;
+        width: 1vw;
+        height: 1vw;
+        background-image: url("img/plus.png");
+        margin-right: 1%;
+    }
+    .open-block:hover > .meme {
+        height: 100%;
+        position: static;
+        margin-left: 25%;
+        animation: show 2s;
+        padding-top: 2%;
+    }
+    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
+        display: inline-block;
+        width: 1vw;
+        height: 1vw;
+        background-image: url("img/free-icon-font-cross.png");
+        margin-right: 1%;
+        margin-top: 0;
+    }
+    .bayan:hover .accordion input + label > .line {
+        background-color: rgb(97, 97, 235);
+    }
 }
 @keyframes show {
     from {opacity: 0;} to {opacity: 1;}
 }
 
-@media all and (max-width: 1490px) and (min-width: 1100px) {
+@media all and (max-width: 1490px) and (min-width: 1200px) {
     body {
         font-size: 1.8rem;
         width: 80vw;
@@ -147,19 +147,8 @@ h1 {
         width: 1.2vw;
         height: 1.2vw;
     }
-    .bayan:hover .icon1 {
-        width: 1.2vw;
-        height: 1.2vw;
-    }
-    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
-        width: 1.2vw;
-        height: 1.2vw;
 }
-.open-block:hover > .meme {
-    margin-left: 30%;
-}
-}
-@media all and (max-width: 1200px) and (min-width: 850px) {
+@media all and (max-width: 1200px) and (min-width: 850px)  {
     body {
         width: 80vw;
     }
@@ -174,18 +163,6 @@ h1 {
         height: 1.6vw;
         margin-left: 4%;
     }
-    .bayan:hover .icon1 {
-        width: 1.6vw;
-        height: 1.6vw;
-        margin-left: 4%;
-    }
-    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
-        width: 1.6vw;
-        height: 1.6vw;
-}
-.open-block:hover > .meme {
-    margin-left: 30%;
-}
 }
 @media all and (max-width: 850px) and (min-width: 760px) {
     body {
@@ -205,17 +182,6 @@ h1 {
         width: 2.1vw;
         height: 2.1vw;
     }
-    .bayan:hover .icon1 {
-        width: 2.1vw;
-        height: 2.1vw;
-    }
-    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
-        width: 2.1vw;
-        height: 2.1vw;
-}
-.open-block:hover > .meme {
-    margin-left: 23%;
-}
 }
 @media all and (max-width: 760px) and (min-width: 610px) {
     body {
@@ -238,17 +204,6 @@ h1 {
         width: 2.4vw;
         height: 2.4vw;
     }
-    .bayan:hover .icon1 {
-        width: 2.4vw;
-        height: 2.4vw;
-    }
-    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
-        width: 2.4vw;
-        height: 2.4vw;
-}
-.open-block:hover > .meme {
-    margin-left: 18%;
-}
 }
 @media all and (max-width: 610px) and (min-width: 560px) {
     body {
@@ -271,17 +226,6 @@ h1 {
         width: 2.7vw;
         height: 2.7vw;
     }
-    .bayan:hover .icon1 {
-        width: 2.7vw;
-        height: 2.7vw;
-    }
-    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
-        width: 2.7vw;
-        height: 2.7vw;
-}
-.open-block:hover > .meme {
-    margin-left: 14%;
-}
 }
 @media all and (max-width: 560px) and (min-width: 490px) {
     body {
@@ -304,17 +248,6 @@ h1 {
         width: 3.1vw;
         height: 3.1vw;
     }
-    .bayan:hover .icon1 {
-        width: 3.1vw;
-        height: 3.1vw;
-    }
-    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
-        width: 3.1vw;
-        height: 3.1vw;
-}
-.open-block:hover > .meme {
-    margin-left: 14%;
-}
 }
 @media all and (max-width: 490px) and (min-width: 380px) {
     body {
@@ -337,17 +270,6 @@ h1 {
         width: 3.6vw;
         height: 3.6vw;
     }
-    .bayan:hover .icon1 {
-        width: 3.6vw;
-        height: 3.6vw;
-    }
-    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
-        width: 3.6vw;
-        height: 3.6vw;
-}
-.open-block:hover > .meme {
-    margin-left: 0;
-}
 }
 @media all and (max-width: 380px) {
     body {
@@ -373,15 +295,4 @@ h1 {
         width: 4vw;
         height: 4vw;
     }
-    .bayan:hover .icon1 {
-        width: 4vw;
-        height: 4vw;
-    }
-    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
-        width: 4vw;
-        height: 4vw;
-}
-.open-block:hover > .meme {
-    margin-left: 0;
-}
 }
