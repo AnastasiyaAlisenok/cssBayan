@@ -1,0 +1,192 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(220, 215, 215);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    width: 90vh;
+    height: 120vh;
+    padding: 0;
+    margin: 0 auto;
+}
+.bayan {
+    width: 90%;
+    padding-top: 40px;
+    margin: 0 7%;
+    background-color:rgb(220, 215, 215);
+    margin-bottom: 10vh;
+}
+
+h1 {
+    color: #ff7f50;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 0;
+}
+.accordion  {
+    width: 100%;
+    color: coral;
+    font-weight: 700;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.accordion label {
+    position: static;
+    cursor: pointer;
+    background-color: rgb(220, 215, 215);
+    padding: 2% 0 2% 0;
+    display: inline-block;
+    width: 100%;
+    margin-left: 0;
+}
+.title-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    width: 90%;
+}
+.line {
+    width: 100%;
+    height: 0.1vw;
+    background-color: coral;
+    margin-top: 10px;
+}
+.meme {
+    transition: max-height 1s, padding 1s;
+    position: static;
+    max-height: 0;
+    padding-top: 2%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-left: 25%;
+}
+.accordion input {
+    display: none;
+}
+.accordion input:checked + label {
+    color: rgb(4, 4, 173);
+}
+.accordion input:checked + label > .title-container > .icon1 {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("img/free-icon-font-cross.png");
+    margin-right: 1%;
+}
+.accordion input:checked + label > .line {
+    background-color: rgb(97, 97, 235);
+}
+.accordion input:checked + label > .meme {
+    max-height: 300vh;
+    position: static;
+    padding-left: 25%;
+    animation: show 1s;
+}
+.meme:active {
+    cursor: wait;
+}
+label:active {
+    opacity: 0.4;
+}
+label:active > .title-container {
+    color: coral;
+    opacity: 1;
+    cursor: wait;
+}
+
+@media (hover:hover) {
+    .bayan:hover .accordion label {
+        color:  rgb(97, 97, 235);
+        padding: 2% 0 2% 0;
+        margin-top: 0;
+        position: static;
+        cursor: pointer;
+        background-color: rgb(220, 215, 215);
+        display: inline-block;
+        width: 100%;
+    }
+    .bayan:hover .icon1 {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        background-image: url("img/plus.png");
+        margin-right: 1%;
+    }
+    .open-block:hover > .meme {
+        max-height: 300vh;
+        position: static;
+        padding-left: 25%;
+        padding-top: 2%;
+    }
+    .bayan:hover .accordion input:checked + label > .title-container > .icon1 {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        background-image: url("img/free-icon-font-cross.png");
+        margin-right: 1%;
+        margin-top: 0;
+    }
+    .bayan:hover .accordion input + label > .line {
+        background-color: rgb(97, 97, 235);
+    }
+    img:hover {
+        transform: scale(1.05);
+        transition: all ease .7s;
+    }
+}
+@media all and (max-width: 1000px) and (min-width: 760px)  {
+    body {
+        font-size: 1.4rem;
+        width: 80vw;
+    }
+    h1 {
+        font-size: 2rem;
+     }
+    .meme {
+        padding-left: 30%;
+    }
+    .accordion input:checked + label > .meme {
+        padding-left: 30%;
+    }
+}
+@media all and (max-width: 760px) and (min-width: 320px) {
+    body {
+        font-size: 1.2rem;
+        width: 85vw;
+    }
+    .bayan {
+        margin: 0 5%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .line {
+        width: 85vw;
+    }
+    .meme {
+        padding-left: 0;
+    }
+    .accordion input:checked + label > .meme {
+        padding-left: 0;
+    }
+    .meme img {
+        width: 80vw;
+        height: auto;
+    }
+}
+@media all and (max-width: 380px) {
+    .accordion input:checked + label > .title-container > .icon1 {
+        width: 1rem;
+        height: 1rem;
+    } 
+    body {
+        font-size: 1rem;
+        width: 85vw;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
