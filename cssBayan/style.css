@@ -114,6 +114,7 @@ label:active > .title-container {
         height: 1rem;
         background-image: url("img/plus.png");
         margin-right: 1%;
+        transition: .5s;
     }
     .open-block:hover > .meme {
         max-height: 300vh;
@@ -128,6 +129,7 @@ label:active > .title-container {
         background-image: url("img/free-icon-font-cross.png");
         margin-right: 1%;
         margin-top: 0;
+        transition: .5s;
     }
     .bayan:hover .accordion input + label > .line {
         background-color: rgb(97, 97, 235);
